@@ -227,7 +227,7 @@ def main(args):
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--input-dir', type=str, help='Directory with unaligned images.')
+    parser.add_argument('--input-dir',default='', type=str, help='Directory with unaligned images.')
     parser.add_argument('--name', type=str, help='dataset name, can be facescrub, megaface, webface, celeb.')
     parser.add_argument('--output-dir', type=str, help='Directory with aligned face thumbnails.')
     #parser.add_argument('--image_size', type=str, help='Image size (height, width) in pixels.', default='112,112')

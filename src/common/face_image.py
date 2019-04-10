@@ -17,7 +17,7 @@ def load_property(data_dir):
 
 
 def get_dataset_webface(input_dir):
-  clean_list_file = input_dir+"_clean_list.txt"
+  clean_list_file = input_dir + "_clean_list.txt"
   ret = []
   for line in open(clean_list_file, 'r'):
     vec = line.strip().split()
