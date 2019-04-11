@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/trainarc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/insightface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/insightface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/14162257hlaohphc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/14172003l7ifbz67.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/model_slim.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/model_slim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symbols/fmobilefacenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbols/fmobilefacenet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symbols/symbol_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbols/symbol_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train_softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_softmax.py" afterDir="false" />
-    </list>
+    <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +69,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="151" />
-          <entry key="sh" value="95" />
+          <entry key="sh" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="86" />
+          <entry key="Bash" value="98" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="151" />
         </counts>
@@ -140,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="34" column="198" selection-start-line="34" selection-start-column="198" selection-end-line="34" selection-end-column="198" />
+              <caret line="34" column="195" selection-start-line="34" selection-start-column="195" selection-end-line="34" selection-end-column="195" />
             </state>
           </provider>
         </entry>
@@ -829,7 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="34" column="198" selection-start-line="34" selection-start-column="198" selection-end-line="34" selection-end-column="198" />
+          <caret line="34" column="195" selection-start-line="34" selection-start-column="195" selection-end-line="34" selection-end-column="195" />
         </state>
       </provider>
     </entry>
