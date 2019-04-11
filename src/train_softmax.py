@@ -86,7 +86,7 @@ def parse_args():
   # general
   parser.add_argument('--data-dir', default='', help='training set directory')
   parser.add_argument('--prefix', default='../model/model', help='directory to save model.')
-  parser.add_argument('--pretrained', default='', help='pretrained model to load')
+  parser.add_argument('--pretrained', default='/media/handsome/backupdata1/hanson/face-recognition/models/model-r50-am-lfw/model,0', help='pretrained model to load')
   parser.add_argument('--ckpt', type=int, default=1, help='checkpoint saving option. 0: discard saving. 1: save when necessary. 2: always save')
   parser.add_argument('--loss-type', type=int, default=4, help='loss type')
   parser.add_argument('--verbose', type=int, default=2000, help='do verification testing and model saving every verbose batches')
