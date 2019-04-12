@@ -3,7 +3,7 @@ export MXNET_CPU_WORKER_NTHREADS=24
 export MXNET_CUDNN_AUTOTUNE_DEFAULT=0
 export MXNET_ENGINE_TYPE=ThreadedEnginePerDevice
 
-DATA_DIR=/media/handsome/backupdata1/hanson/face-recognition/faces_emore
+DATA_DIR=/home/handsome/Documents/data/faces_emore
 
 NETWORK=y1
 JOB=softmax12
