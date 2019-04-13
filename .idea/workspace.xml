@@ -2,18 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/Aaron_Guiel_0001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/Ricardo_Sanchez_0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/Ricardo_Sanchez_0003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/Richard_Crenna_0001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/Richard_Crenna_0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/cvt_tvm_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/test_tvm_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/insightface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/insightface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HSVD/clearn_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HSVD/clearn_recg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HSVD/hsvd_bin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HSVD/make_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/make_meglass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/make_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/meglass_bin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/meta.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7134850@N05_identity_2@8417960035_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7134850@N05_identity_2@8980174892_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@11265207074_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@11265230806_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@9496761928_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8049225@N08_identity_4@8080401817_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8049225@N08_identity_4@8226921695_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8101189@N07_identity_0@3356842934_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8101189@N07_identity_0@3356925158_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/samples/samples.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/test/gallery_black_glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/test/gallery_no_glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/test/probe_black_glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeGlass/test/probe_no_glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/0_99_4442_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/2_100_4140_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/add_eye_glasses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/10725737  3  -17  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/15798471  0  -14  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/17221566  1  -19  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/23363301  2  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/2731251  0  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/30448444  -1  -14  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/31659933  1  -15  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/33975192  2  -18  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/53430375  0  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/65628666  1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/66832220  0  -16  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/70543913  -1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/74044142  0  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/76511815  2  -16  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/87870318  1  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/89136601  1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/91255961  2  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/96062918  0  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/97991976  5  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._10725737  3  -17  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._15798471  0  -14  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._17221566  1  -19  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._23363301  2  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._2731251  0  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._30448444  -1  -14  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._31659933  1  -15  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._33975192  2  -18  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._53430375  0  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._65628666  1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._66832220  0  -16  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._70543913  -1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._74044142  0  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._76511815  2  -16  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._87870318  1  -15  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._89136601  1  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._91255961  2  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._96062918  0  -15  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._97991976  5  -16  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/14353614  -2  -29  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/14779699  4  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/2322285  2  -28  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/29334032  2  -32  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/31129432  0  -30  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/31166574  1  -31  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/33690685  0  -26  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/34932836  1  -27  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/36113532  1  -31  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/45615700  2  -27  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/50525103  1  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/54791218  0  -32  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/55301348  1  -31  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/56108676  1  -28  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/64158084  4  -32  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/70012934  -2  -28  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/75601481  2  -27  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/77280019  0  -28  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/81249865  1  -33  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/81356577  0  -33  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/84031174  2  -29  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/85350643  0  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/86907818  1  -33  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/90787462  2  -28  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/9209583  3  -30  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/95692973  3  -29  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._14353614  -2  -29  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._14779699  4  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._2322285  2  -28  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._29334032  2  -32  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._31129432  0  -30  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._31166574  1  -31  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._33690685  0  -26  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._34932836  1  -27  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._36113532  1  -31  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._45615700  2  -27  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._50525103  1  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._54791218  0  -32  -178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._55301348  1  -31  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._56108676  1  -28  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._64158084  4  -32  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._70012934  -2  -28  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._75601481  2  -27  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._77280019  0  -28  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._81249865  1  -33  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._81356577  0  -33  -176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._84031174  2  -29  -180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._85350643  0  -27  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._86907818  1  -33  -175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._90787462  2  -28  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._9209583  3  -30  -177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._95692973  3  -29  -179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/【上】0-15.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/【上】0-30.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/iloveyouticket.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/opencv-mixed-clone-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/opencv-normal-clone-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/wood-texture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-eye-glasses/write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/align/align_hsvd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/align/align_meglass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/A.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/meglass_embedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/test.txt.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/verification_hsvd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/verification_meglass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eval/view.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/detect_face.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/feature_compare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3015_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3704.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3704_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4202.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4202_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4935.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4935_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/6432.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/6432_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/7521.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/7521_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/A.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/A.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/B.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/images.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det1.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det2.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det3.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mxnet-server/test_feature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/Tom_Hanks_54745.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trainarc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/trainarc.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +214,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="md" value="1" />
-          <entry key="py" value="24" />
+          <entry key="log" value="1" />
+          <entry key="md" value="3" />
+          <entry key="py" value="28" />
           <entry key="sh" value="4" />
         </counts>
       </usages-collector>
@@ -74,9 +224,9 @@
         <counts>
           <entry key="Bash" value="3" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="24" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -98,40 +248,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="156" column="26" lean-forward="true" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/face_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
-              <caret line="184" column="25" lean-forward="true" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
+              <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/fmobilefacenet.py">
+        <entry file="file://$PROJECT_DIR$/src/mxnet-server/feature_compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+            <state relative-caret-position="334">
+              <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/model-y1-arcface-symbol.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="4212" column="9" selection-start-line="4212" selection-start-column="9" selection-end-line="4212" selection-end-column="9" />
+        <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="190">
+                <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy/model_slim.py">
+        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/retrain0.001.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="246" column="42" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -140,7 +304,7 @@
         <entry file="file://$PROJECT_DIR$/deploy/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -148,33 +312,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy/test_tvm_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recognition/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6588">
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/train.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="247">
+                <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231">
-              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="209">
+              <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -226,10 +387,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="545" />
-    <option name="y" value="360" />
-    <option name="width" value="616" />
-    <option name="height" value="391" />
+    <option name="x" value="816" />
+    <option name="y" value="371" />
+    <option name="width" value="1110" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,23 +408,7 @@
             <path>
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
               <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="deploy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="model-y1-test2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilefacenet-V2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
@@ -274,13 +419,7 @@
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
               <item name="insightface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="symbols" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="align" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -298,10 +437,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/deploy" />
-      <recent name="$PROJECT_DIR$/src/symbols" />
+      <recent name="$PROJECT_DIR$/src/align" />
+      <recent name="$PROJECT_DIR$/src/eval" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/deploy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -545,12 +685,12 @@
     <frame x="-1" y="52" width="1922" height="1005" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2395998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11111111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39904422" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,32 +732,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.conda/envs/torch10/lib/python3.6/site-packages/mxnet/io/io.py" />
-    <entry file="file://$PROJECT_DIR$/src/test.py" />
-    <entry file="file://$PROJECT_DIR$/src/data/age_merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_celeb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="215" column="64" selection-start-line="215" selection-start-column="55" selection-end-line="215" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_insight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4620" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/dir2rec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3630" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/glint2lst.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -785,14 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/train.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-480849" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/trainarc.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -887,7 +993,7 @@
     <entry file="file://$PROJECT_DIR$/deploy/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -897,21 +1003,68 @@
     <entry file="file://$PROJECT_DIR$/src/api/face_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="184" column="25" lean-forward="true" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
+          <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy/test_tvm_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        <state relative-caret-position="209">
+          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mxnet-server/feature_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="156" column="26" lean-forward="true" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/retrain0.001.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="246" column="42" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/train.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="247">
+            <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
