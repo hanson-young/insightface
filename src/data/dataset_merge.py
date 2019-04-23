@@ -4,6 +4,7 @@ from __future__ import print_function
 import os
 import sys
 import mxnet as mx
+
 from mxnet import ndarray as nd
 import random
 import argparse
@@ -14,6 +15,10 @@ from sklearn.decomposition import PCA
 from easydict import EasyDict as edict
 from sklearn.cluster import DBSCAN
 import numpy as np
+import warnings
+
+warnings.filterwarnings('ignore')
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 sys.path.append(os.path.join(os.path.dirname(__file__),'..', 'common'))
 import face_image
@@ -279,13 +284,13 @@ def main(args):
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='do dataset merge')
   # general
-  parser.add_argument('--include', default='', type=str, help='')
-  parser.add_argument('--exclude', default='', type=str, help='')
-  parser.add_argument('--output', default='', type=str, help='')
-  parser.add_argument('--model', default='../model/softmax,50', help='path to load model.')
-  parser.add_argument('--batch-size', default=32, type=int, help='')
-  parser.add_argument('--param1', default=0.3, type=float, help='')
-  parser.add_argument('--param2', default=0.4, type=float, help='')
+  parser.add_argument('--include', default='/media/yj/hanson/face-recognition/china-cp-train,/media/yj/hanson/face-recognition/faces_emore', type=str, help='')
+  parser.add_argument('--exclude', default='/media/yj/hanson/face-recognition/faces_emore/lfw.bin', type=str, help='')
+  parser.add_argument('--output', default='/media/yj/hanson/face-recognition/faces-merge', type=str, help='')
+  parser.add_argument('--model', default='/media/yj/hanson/face-recognition/models/model-r100-ii/model,0', help='path to load model.')
+  parser.add_argument('--batch-size', default=64, type=int, help='')
+  parser.add_argument('--param1', default=0.45, type=float, help='')
+  parser.add_argument('--param2', default=0.45, type=float, help='')
   parser.add_argument('--mode', default=1, type=int, help='')
   parser.add_argument('--test', default=0, type=int, help='')
   args = parser.parse_args()

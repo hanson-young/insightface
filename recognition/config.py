@@ -7,14 +7,14 @@ config = edict()
 config.bn_mom = 0.9
 config.workspace = 256
 config.emb_size = 512
-config.ckpt_embedding = True
+config.ckpt_embedding = False
 config.net_se = 0
 config.net_act = 'prelu'
 config.net_unit = 3
 config.net_input = 1
 config.net_output = 'E'
 config.net_multiplier = 1.0
-config.val_targets = ['lfw', 'cfp_fp', 'agedb_30']
+config.val_targets = ['lfw', 'cfp_fp', 'agedb_30','cplfw','calfw']
 config.ce_loss = True
 config.fc7_lr_mult = 1.0
 config.fc7_wd_mult = 1.0
@@ -56,7 +56,7 @@ network.d201.densenet_dropout = 0.0
 
 network.y1 = edict()
 network.y1.net_name = 'fmobilefacenet'
-network.y1.emb_size = 128
+network.y1.emb_size = 512
 network.y1.net_output = 'GDC'
 
 network.m1 = edict()
@@ -94,10 +94,10 @@ dataset = edict()
 
 dataset.emore = edict()
 dataset.emore.dataset = 'emore'
-dataset.emore.dataset_path = '../datasets/faces_emore'
+dataset.emore.dataset_path = '/home/handsome/Documents/data/faces_emore'
 dataset.emore.num_classes = 85742
 dataset.emore.image_shape = (112,112,3)
-dataset.emore.val_targets = ['lfw', 'cfp_fp', 'agedb_30']
+dataset.emore.val_targets = ['lfw', 'cfp_fp','vgg2_fp','cfp_ff', 'agedb_30']
 
 loss = edict()
 loss.softmax = edict()
@@ -154,8 +154,9 @@ default = edict()
 
 # default network
 default.network = 'y1'
-default.pretrained = ''
-default.pretrained_epoch = 1
+default.pretrained = '/media/yj/hanson/face-recognition/models/model-y1-softmax/3/model-y1-softmax12'
+# /media/yj/hanson/face-recognition/models/model-y1-test2/model
+default.pretrained_epoch = 17
 # default dataset
 default.dataset = 'emore'
 default.loss = 'arcface'
@@ -164,13 +165,13 @@ default.verbose = 2000
 default.kvstore = 'device'
 
 default.end_epoch = 10000
-default.lr = 0.1
-default.wd = 0.0005
+default.lr = 0.001
+default.wd = 0.00001
 default.mom = 0.9
-default.per_batch_size = 128
+default.per_batch_size = 192
 default.ckpt = 3
 default.lr_steps = '100000,160000,220000'
-default.models_root = './models'
+default.models_root = '/media/yj/hanson/face-recognition/heils-models'
 
 
 def generate_config(_network, _dataset, _loss):

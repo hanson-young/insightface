@@ -149,7 +149,7 @@ def parse_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         description='Create an image list or \
         make a record database by reading from an image list')
-    parser.add_argument('--prefix', type=str,default='/media/hanson/0C5417A50C5417A5/Code/output/', help='prefix of input/output lst and rec files.')
+    parser.add_argument('--prefix', type=str,default='/media/yj/hanson/face-recognition/china-cp-112x112', help='prefix of input/output lst and rec files.')
     # parser.add_argument('root', help='path to folder containing images.')
 
     cgroup = parser.add_argument_group('Options for creating image lists')
@@ -211,7 +211,7 @@ if __name__ == '__main__':
                     if os.path.isfile(os.path.join(working_dir, fname))]
         count = 0
         for fname in files:
-            if fname.startswith(args.prefix) and fname.endswith('.lst'):
+            if fname.startswith(args.prefix) and fname.endswith('lst'):
                 print('Creating .rec file from', fname, 'in', working_dir)
                 count += 1
                 image_list = read_list(fname)

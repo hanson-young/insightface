@@ -32,6 +32,7 @@ logger.setLevel(logging.INFO)
 
 args = None
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '1,2,3'
 
 
 def parse_args():

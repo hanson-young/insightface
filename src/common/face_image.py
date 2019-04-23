@@ -4,7 +4,6 @@ import os
 import json
 import numpy as np
 
-
 def load_property(data_dir):
   prop = edict()
   for line in open(os.path.join(data_dir, 'property')):

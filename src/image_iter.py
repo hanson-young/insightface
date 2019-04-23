@@ -25,7 +25,6 @@ import multiprocessing
 
 logger = logging.getLogger()
 
-
 class FaceImageIter(io.DataIter):
 
     def __init__(self, batch_size, data_shape,

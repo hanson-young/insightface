@@ -2,167 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HSVD/clearn_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HSVD/clearn_recg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HSVD/hsvd_bin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HSVD/make_pairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/make_meglass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/make_pairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/meglass_bin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/meta.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7134850@N05_identity_2@8417960035_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7134850@N05_identity_2@8980174892_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@11265207074_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@11265230806_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/7953937@N04_identity_7@9496761928_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8049225@N08_identity_4@8080401817_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8049225@N08_identity_4@8226921695_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8101189@N07_identity_0@3356842934_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/8101189@N07_identity_0@3356925158_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/samples/samples.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/test/gallery_black_glass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/test/gallery_no_glass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/test/probe_black_glass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MeGlass/test/probe_no_glass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/0_99_4442_img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/2_100_4140_img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/add_eye_glasses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/10725737  3  -17  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/15798471  0  -14  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/17221566  1  -19  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/23363301  2  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/2731251  0  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/30448444  -1  -14  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/31659933  1  -15  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/33975192  2  -18  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/53430375  0  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/65628666  1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/66832220  0  -16  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/70543913  -1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/74044142  0  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/76511815  2  -16  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/87870318  1  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/89136601  1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/91255961  2  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/96062918  0  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/97991976  5  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._10725737  3  -17  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._15798471  0  -14  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._17221566  1  -19  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._23363301  2  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._2731251  0  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._30448444  -1  -14  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._31659933  1  -15  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._33975192  2  -18  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._53430375  0  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._65628666  1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._66832220  0  -16  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._70543913  -1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._74044142  0  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._76511815  2  -16  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._87870318  1  -15  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._89136601  1  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._91255961  2  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._96062918  0  -15  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-15/__MACOSX/._97991976  5  -16  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/14353614  -2  -29  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/14779699  4  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/2322285  2  -28  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/29334032  2  -32  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/31129432  0  -30  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/31166574  1  -31  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/33690685  0  -26  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/34932836  1  -27  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/36113532  1  -31  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/45615700  2  -27  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/50525103  1  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/54791218  0  -32  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/55301348  1  -31  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/56108676  1  -28  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/64158084  4  -32  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/70012934  -2  -28  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/75601481  2  -27  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/77280019  0  -28  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/81249865  1  -33  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/81356577  0  -33  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/84031174  2  -29  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/85350643  0  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/86907818  1  -33  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/90787462  2  -28  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/9209583  3  -30  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/95692973  3  -29  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._14353614  -2  -29  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._14779699  4  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._2322285  2  -28  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._29334032  2  -32  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._31129432  0  -30  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._31166574  1  -31  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._33690685  0  -26  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._34932836  1  -27  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._36113532  1  -31  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._45615700  2  -27  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._50525103  1  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._54791218  0  -32  -178.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._55301348  1  -31  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._56108676  1  -28  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._64158084  4  -32  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._70012934  -2  -28  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._75601481  2  -27  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._77280019  0  -28  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._81249865  1  -33  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._81356577  0  -33  -176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._84031174  2  -29  -180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._85350643  0  -27  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._86907818  1  -33  -175.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._90787462  2  -28  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._9209583  3  -30  -177.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/0-30/__MACOSX/._95692973  3  -29  -179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/【上】0-15.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/eye_glasses/【上】0-30.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/iloveyouticket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/opencv-mixed-clone-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/opencv-normal-clone-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/wood-texture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add-eye-glasses/write.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/align/align_hsvd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/align/align_meglass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/A.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/meglass_embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/test.txt.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/verification_hsvd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/verification_meglass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eval/view.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/detect_face.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/feature_compare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3015.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3015_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3704.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/3704_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4202.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4202_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4935.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/4935_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/6432.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/6432_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/7521.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/7521_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/A.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/A.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/B.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/images/images.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det1.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det2.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/model/det3.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mxnet-server/test_feature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recognition/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/align/align_china.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/insightface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/insightface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/model_slim.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/model_slim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition/sample_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/sample_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition/train_parall.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/train_parall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/face_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/face_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dataset_merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dataset_merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/face2rec2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/face2rec2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/image_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_softmax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trainarc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/trainarc.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,40 +61,48 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="cc" value="1" />
+          <entry key="h" value="1" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
-          <entry key="md" value="3" />
-          <entry key="py" value="28" />
-          <entry key="sh" value="4" />
+          <entry key="md" value="4" />
+          <entry key="py" value="83" />
+          <entry key="sh" value="8" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="3" />
+          <entry key="Bash" value="7" />
+          <entry key="C++" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="28" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="38" />
           <entry key="dummy" value="14" />
-          <entry key="py" value="384" />
-          <entry key="sh" value="107" />
+          <entry key="md" value="1" />
+          <entry key="py" value="690" />
+          <entry key="sh" value="152" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="98" />
+          <entry key="Bash" value="143" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="Python" value="384" />
+          <entry key="Python" value="728" />
         </counts>
       </usages-collector>
     </session>
@@ -248,94 +110,89 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
+        <entry file="file://$PROJECT_DIR$/src/align/align_china.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="156" column="26" lean-forward="true" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/face_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mxnet-server/feature_compare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="190">
-                <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/retrain0.001.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="246" column="42" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="133">
+              <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
               <folding>
-                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/train.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="247">
-                <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
+        <entry file="file://$PROJECT_DIR$/recognition/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <state relative-caret-position="29">
+              <caret line="172" column="20" lean-forward="true" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/data/dataset_clean.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2793">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="292" column="41" selection-start-line="292" selection-start-column="34" selection-end-line="292" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/face2rec2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="204" column="12" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy/model_slim.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="12" column="102" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recognition/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="323" column="15" selection-start-line="323" selection-start-column="10" selection-end-line="323" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eval/verification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="183" column="17" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -349,14 +206,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pack-label</find>
-      <find>loss-type</find>
-      <find>loss</find>
-      <find>loss_type</find>
-      <find>$LOGFILE</find>
       <find>LOGFILE</find>
       <find>model</find>
+      <find>data_dir</find>
+      <find>ce-lo</find>
+      <find>ce_</find>
+      <find>aux_params</find>
+      <find>arg_params</find>
+      <find>FaceImageIter</find>
+      <find>mean</find>
+      <find>mirror</find>
+      <find>cutoff</find>
+      <find>filter</find>
+      <find>verification</find>
+      <find>beta_freeze</find>
+      <find>freeze</find>
+      <find>begin_epoch</find>
+      <find>end_epoch</find>
+      <find>val_dataiter</find>
+      <find>eval_metrics</find>
+      <find>opt</find>
+      <find>epoch_cb</find>
+      <find>is_init</find>
+      <find>logger</find>
+      <find>net_act</find>
+      <find>arc</find>
+      <find>pretrained</find>
+      <find>logging</find>
+      <find>ckpt_embedding</find>
+      <find>mode</find>
+      <find>exclude</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -368,29 +251,37 @@
         <option value="$PROJECT_DIR$/test_mxiter.py" />
         <option value="$PROJECT_DIR$/src/test_mxiter.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
-        <option value="$PROJECT_DIR$/src/common/face_image.py" />
         <option value="$PROJECT_DIR$/src/align/align_megaface.py" />
         <option value="$PROJECT_DIR$/src/align/align_lfw.py" />
-        <option value="$PROJECT_DIR$/src/data/face2rec2.py" />
         <option value="$PROJECT_DIR$/src/data/lfw2pack.py" />
         <option value="$PROJECT_DIR$/src/align/align_dlib.py" />
-        <option value="$PROJECT_DIR$/src/train_softmax.py" />
         <option value="$PROJECT_DIR$/src/train.sh" />
-        <option value="$PROJECT_DIR$/deploy/model_slim.py" />
         <option value="$PROJECT_DIR$/deploy/test.py" />
         <option value="$PROJECT_DIR$/deploy/tvm_deploy.py" />
         <option value="$PROJECT_DIR$/deploy/test_tvm_py.py" />
         <option value="$PROJECT_DIR$/deploy/cvt_tvm_model.py" />
         <option value="$PROJECT_DIR$/deploy/test_tvm_model.py" />
+        <option value="$PROJECT_DIR$/src/train_softmax.py" />
+        <option value="$PROJECT_DIR$/src/image_iter.py" />
+        <option value="$PROJECT_DIR$/src/common/face_image.py" />
         <option value="$PROJECT_DIR$/src/trainarc.sh" />
+        <option value="$PROJECT_DIR$/src/align/align_china.py" />
+        <option value="$PROJECT_DIR$/src/megaface/README.md" />
+        <option value="$PROJECT_DIR$/recognition/sample_config.py" />
+        <option value="$PROJECT_DIR$/recognition/train_parall.py" />
+        <option value="$PROJECT_DIR$/recognition/train.py" />
+        <option value="$PROJECT_DIR$/recognition/config.py" />
+        <option value="$PROJECT_DIR$/src/data/face2rec2.py" />
+        <option value="$PROJECT_DIR$/src/data/dataset_merge.py" />
+        <option value="$PROJECT_DIR$/deploy/model_slim.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="816" />
-    <option name="y" value="371" />
-    <option name="width" value="1110" />
-    <option name="height" value="1004" />
+    <option name="x" value="-128" />
+    <option name="y" value="141" />
+    <option name="width" value="1373" />
+    <option name="height" value="759" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -408,7 +299,18 @@
             <path>
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
               <item name="insightface" type="462c0819:PsiDirectoryNode" />
-              <item name="mobilefacenet-V2" type="462c0819:PsiDirectoryNode" />
+              <item name="deploy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insightface" type="462c0819:PsiDirectoryNode" />
+              <item name="recognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insightface" type="462c0819:PsiDirectoryNode" />
+              <item name="recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="symbol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
@@ -419,7 +321,19 @@
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
               <item name="insightface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="align" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insightface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="eval" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insightface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="symbols" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -433,15 +347,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recognition/symbol" />
+      <recent name="$PROJECT_DIR$/recognition" />
       <recent name="$PROJECT_DIR$/src/align" />
       <recent name="$PROJECT_DIR$/src/eval" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/deploy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -456,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_tvm_model">
+  <component name="RunManager" selected="Python.model_slim">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -479,6 +393,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="dataset_merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="insightface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/dataset_merge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="face2rec2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -487,7 +423,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -523,29 +459,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="insightface" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deploy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deploy/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_tvm_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -554,11 +468,11 @@
         <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deploy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recognition" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deploy/test_tvm_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recognition/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -567,7 +481,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tvm_deploy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_parall" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -576,11 +490,11 @@
         <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deploy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recognition" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deploy/cvt_tvm_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recognition/train_parall.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -623,19 +537,19 @@
       <item itemvalue="Python tests.pytest in test_tvm_model.py" />
       <item itemvalue="Python.lfw2pack" />
       <item itemvalue="Python tests.test_mxiter.py" />
-      <item itemvalue="Python.model_slim" />
-      <item itemvalue="Python.tvm_deploy" />
-      <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.train_parall" />
+      <item itemvalue="Python.train" />
       <item itemvalue="Python.face2rec2" />
-      <item itemvalue="Python.test_tvm_model" />
+      <item itemvalue="Python.dataset_merge" />
+      <item itemvalue="Python.model_slim" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_tvm_model" />
-        <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.tvm_deploy" />
         <item itemvalue="Python.model_slim" />
+        <item itemvalue="Python.dataset_merge" />
         <item itemvalue="Python.face2rec2" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.train_parall" />
       </list>
     </recent_temporary>
   </component>
@@ -682,23 +596,23 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="52" width="1922" height="1005" extended-state="7" />
+    <frame x="-128" y="141" width="1373" height="759" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11111111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2037037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297491" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39904422" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42698413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.13127854" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -732,319 +646,61 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/glint2lst.py">
+    <entry file="file://$PROJECT_DIR$/src/mxnet-server/feature_compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="3154">
+          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/dataset_clean.py">
+    <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="153" column="16" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="16" />
+        <state relative-caret-position="950">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/dataset_info.py">
+    <entry file="file://$PROJECT_DIR$/MeGlass/make_meglass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/megaface/gen_megaface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="222" column="62" selection-start-line="222" selection-start-column="62" selection-end-line="222" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/symbols/fnasnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="567" column="28" selection-start-line="567" selection-start-column="28" selection-end-line="567" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/benchmark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/mtcnn_detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="496" column="26" selection-start-line="496" selection-start-column="22" selection-end-line="496" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gender-age/train.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model-y1-test2/log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/face_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/14162257hlaohphc.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/14172003l7ifbz67.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/.conda/envs/py27/lib/python2.7/ntpath.py" />
-    <entry file="file://$USER_HOME$/.conda/envs/py27/lib/python2.7/argparse.py" />
-    <entry file="file://$PROJECT_DIR$/gluon/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_megaface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="229" column="47" selection-start-line="229" selection-start-column="47" selection-end-line="229" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/face2rec2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="205" column="36" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/lfw2pack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/lfw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/cfp2pack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="140" column="21" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/face_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2793" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_dlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="113" column="32" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_lfw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="153" column="46" lean-forward="true" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/triplet_image_iter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6954">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/train_softmax.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="88" column="130" selection-start-line="88" selection-start-column="130" selection-end-line="88" selection-end-column="130" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="413" column="4" selection-start-line="413" selection-start-column="4" selection-end-line="413" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/trainarc.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/train.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/symbol_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="119" column="26" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/symbols/fmobilefacenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/model-y1-arcface-symbol.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="4212" column="9" selection-start-line="4212" selection-start-column="9" selection-end-line="4212" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/test_tvm_model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/face_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/cvt_tvm_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/fmobilefacenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/symbols/symbol_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/model_slim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recognition/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6588">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="228">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/face_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="184" column="25" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/test_tvm_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mxnet-server/feature_compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="156" column="26" lean-forward="true" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/retrain0.001.log">
+    <entry file="file://$PROJECT_DIR$/HSVD/make_pairs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="246" column="42" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="42" />
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeGlass/make_pairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeGlass/meglass_bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/trainarc.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1052,19 +708,361 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="190">
-            <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilefacenet-V2/train.md">
+    <entry file="file://$PROJECT_DIR$/deploy/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3rdparty/operator/amsoftmax.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3rdparty/operator/amsoftmax-inl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4451">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/ndarray/gen__internal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="4464" column="4" selection-start-line="4464" selection-start-column="4" selection-end-line="4464" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/train_softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="581" column="47" lean-forward="true" selection-start-line="581" selection-start-column="47" selection-end-line="581" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alignment/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_iter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/symbol/gen_op.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="451" lean-forward="true" selection-start-line="451" selection-end-line="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/image/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="287" column="42" lean-forward="true" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megaface/megaface_noises.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megaface/facescrub_noises.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/data/rec2image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_dataset_mtcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_celeb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="221" column="33" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_insight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="213" column="43" selection-start-line="213" selection-start-column="43" selection-end-line="213" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_dataset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_megaface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="222" column="49" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_meglass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2777">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_lfw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="155" column="28" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/imutils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#148#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megaface/remove_noises.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2451" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megaface/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          <first_editor>
+            <caret column="71" selection-end-line="1" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/megaface/gen_megaface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1219">
+          <caret line="118" column="38" lean-forward="true" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/kvstore_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/face_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="229" column="41" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/trainarc.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/sample_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="172" column="22" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/symbol/symbol_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/symbol/fmobilefacenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/symbols/fmobilefacenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="176" column="53" selection-start-line="176" selection-start-column="53" selection-end-line="176" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/train_parall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="299" column="15" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="15" />
+          <folding>
+            <element signature="e#31#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/symbol/fmnasnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="160" column="23" lean-forward="true" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="323" column="15" selection-start-line="323" selection-start-column="10" selection-end-line="323" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/align/align_china.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/dataset_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2793">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/dataset_c2c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2366">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="172" column="20" lean-forward="true" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/face2rec2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="204" column="12" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/verification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="183" column="17" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="292" column="41" selection-start-line="292" selection-start-column="34" selection-end-line="292" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/model_slim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="12" column="102" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
