@@ -284,8 +284,8 @@ def main(args):
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='do dataset merge')
   # general
-  parser.add_argument('--include', default='/media/yj/hanson/face-recognition/china-cp-train,/media/yj/hanson/face-recognition/faces_emore', type=str, help='')
-  parser.add_argument('--exclude', default='/media/yj/hanson/face-recognition/faces_emore/lfw.bin', type=str, help='')
+  parser.add_argument('--include', default='/media/yj/hanson/face-recognition/china-cp-train,/media/yj/hanson/face-recognition/faces_glint', type=str, help='')
+  parser.add_argument('--exclude', default='', type=str, help='')
   parser.add_argument('--output', default='/media/yj/hanson/face-recognition/faces-merge', type=str, help='')
   parser.add_argument('--model', default='/media/yj/hanson/face-recognition/models/model-r100-ii/model,0', help='path to load model.')
   parser.add_argument('--batch-size', default=64, type=int, help='')

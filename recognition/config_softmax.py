@@ -95,7 +95,7 @@ dataset = edict()
 dataset.emore = edict()
 dataset.emore.dataset = 'emore'
 dataset.emore.dataset_path = '/home/handsome/Documents/data/faces_emore'
-dataset.emore.num_classes = 190493
+dataset.emore.num_classes = 85742
 dataset.emore.image_shape = (112,112,3)
 dataset.emore.val_targets = ['lfw', 'cfp_fp','vgg2_fp','cfp_ff', 'agedb_30']
 
@@ -154,9 +154,9 @@ default = edict()
 
 # default network
 default.network = 'y1'
-default.pretrained = '/media/yj/hanson/face-recognition/heils-models/y1-softmax-emore'
+default.pretrained = ''
 # /media/yj/hanson/face-recognition/models/model-y1-test2/model
-default.pretrained_epoch = 9
+default.pretrained_epoch = 17
 # default dataset
 default.dataset = 'emore'
 default.loss = 'softmax'
@@ -165,13 +165,13 @@ default.verbose = 2000
 default.kvstore = 'device'
 
 default.end_epoch = 10000
-default.lr = 0.01
+default.lr = 0.1
 default.wd = 0.00004
 default.mom = 0.9
-default.per_batch_size = 164
-default.ckpt = 2
-default.lr_steps = '100000,200000,300000'
-# default.lr_steps = '240000,360000,440000'
+default.per_batch_size = 192
+default.ckpt = 3
+# default.lr_steps = '100000,160000,220000'
+default.lr_steps = '240000,360000,440000'
 default.models_root = '/media/yj/hanson/face-recognition/heils-models'
 
 

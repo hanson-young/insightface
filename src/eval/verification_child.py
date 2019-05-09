@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score, roc_curve, auc
 from sklearn.model_selection import KFold
 from scipy import interp
 import matplotlib.pyplot as plt
+from tqdm import tqdm
+from numba import jit
 
 def calculate_accuracy(threshold, dist, actual_issame):
     predict_issame = np.greater(dist, threshold)
@@ -28,8 +30,8 @@ def find_best_acc(labels, scores):
     for thresh in thresholds:
         preds = np.greater_equal(scores, thresh).astype(np.int32)
         acc = accuracy_score(labels, preds, normalize=True)
-        if thresh == 0.46:
-            print(thresh, acc)
+        # if thresh == 0.46:
+        #     print(thresh, acc)
         if acc > best_acc:
             best_thresh = thresh
             best_acc = acc
@@ -57,9 +59,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='do verification')
     # general
-    parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/bin', help='')
-    parser.add_argument('--pairs-path', default='hsvd_pairs.txt', help='meglass pairs path')
-    parser.add_argument('--embedding-bin', default='embedding_h1.bin', help='embedding bin file path.')
+    parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/china_chip/bin', help='')
+    parser.add_argument('--pairs-path', default='chip_pairs.txt', help='meglass pairs path')
+    parser.add_argument('--embedding-bin', default='embedding_h2.bin', help='embedding bin file path.')
 
     args = parser.parse_args()
 
@@ -82,7 +84,8 @@ if __name__ == '__main__':
 
     totalt = 0
     totalf = 0
-    for idx, item in enumerate(pairs_lists):
+
+    for item in tqdm(pairs_lists):
         # if(idx > 100):
         #     break
         tmp = item
@@ -100,20 +103,20 @@ if __name__ == '__main__':
             totalt += 1
         if int(item[2]) == 0:
             totalf += 1
-        if cos < 0.48 and int(item[2]) == 1:#best threshold is 0.27 in flw
+        if cos < 0.55 and int(item[2]) == 1:#best threshold is 0.27 in flw
             countt += 1
 
 
             # print(item, cos)
 
-        if cos >= 0.48 and int(item[2]) == 0:
+        if cos >= 0.55 and int(item[2]) == 0:
             f1.write(tmp)
             countf += 1
         # print(cos)
         # if(cos > 0.5):
         # print(item)
     f1.close()
-    print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
+    # print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
     print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
     cosine = np.array(cosine)
 

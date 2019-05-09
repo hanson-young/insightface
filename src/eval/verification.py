@@ -507,8 +507,8 @@ if __name__ == '__main__':
 
   parser = argparse.ArgumentParser(description='do verification')
   # general
-  parser.add_argument('--data-dir', default='', help='')
-  parser.add_argument('--model', default='../model/softmax,50', help='path to load model.')
+  parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/faces-merge', help='')
+  parser.add_argument('--model', default='/media/yj/hanson/face-recognition/heils-models/y1-softmax-emore/models,0', help='path to load model.')
   parser.add_argument('--target', default='lfw,cfp_ff,cfp_fp,agedb_30', help='test targets.')
   parser.add_argument('--gpu', default=0, type=int, help='gpu id')
   parser.add_argument('--batch-size', default=32, type=int, help='')
