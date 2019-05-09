@@ -53,6 +53,33 @@ def cal_acc(fold_num=10):
         acc_list.append(accuracy_score(labels[test_set], test_preds, normalize=True))
     return acc_list
 
+@jit
+def clc_sim(embedding1, embedding2):
+    num = np.dot(embedding1, embedding2)
+    denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
+    cos = num / denom
+    return cos
+
+
+
+def clc_cosine(bin, pairs_list):
+    cosine = []
+    for item in tqdm(pairs_list):
+        # if(idx > 100):
+        #     break
+        tmp = item
+        item = item.strip('\n').split('\t')
+        index1 = bin[1].index(item[0])
+        index2 = bin[1].index(item[1])
+
+        embedding1 = np.array(bin[0][index1])
+        embedding2 = np.array(bin[0][index2])
+        # num = np.dot(embedding1, embedding2)
+        # denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
+        # cos = num / denom
+        cos = clc_sim(embedding1, embedding2)
+        cosine.append([int(item[2]), cos])
+    return cosine
 
 
 if __name__ == '__main__':
@@ -77,45 +104,39 @@ if __name__ == '__main__':
         bin = pickle.load(f)
         # print(bin)
 
-    f1 = open("../eval/view.txt",'wb')
-    cosine = []
+    cosine_pool = []
     countt = 0
     countf = 0
 
     totalt = 0
     totalf = 0
+    # f1 = open("../eval/view.txt", 'wb')
+    import multiprocessing,math
+    m_pools = 32
+    n_step = int(math.ceil(len(pairs_lists) / float(m_pools)))
+    pool = multiprocessing.Pool(processes=32)
+    for i in tqdm(xrange(0, len(pairs_lists), n_step)):
+        cosine_pool.append(pool.apply_async(clc_cosine, args = (bin, pairs_lists[i : i + n_step])))
+        # print (i, len(cosine_pool[0].get()))
 
-    for item in tqdm(pairs_lists):
-        # if(idx > 100):
-        #     break
-        tmp = item
-        item = item.strip('\n').split('\t')
-        index1 = bin[1].index(item[0])
-        index2 = bin[1].index(item[1])
-
-        embedding1 = np.array(bin[0][index1])
-        embedding2 = np.array(bin[0][index2])
-        num = np.dot(embedding1, embedding2)
-        denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
-        cos = num / denom
-        cosine.append([int(item[2]),cos])
-        if int(item[2]) == 1:
+    cosine = []
+    for i in range(len(cosine_pool)):
+        cosine += cosine_pool[i].get()
+    pool.close()
+    pool.join()
+    for item in tqdm(cosine):
+        if int(item[0]) == 1:
             totalt += 1
-        if int(item[2]) == 0:
+        if int(item[0]) == 0:
             totalf += 1
-        if cos < 0.55 and int(item[2]) == 1:#best threshold is 0.27 in flw
+        if item[1] < 0.46 and int(item[0]) == 1:#best threshold is 0.27 in flw
             countt += 1
 
-
-            # print(item, cos)
-
-        if cos >= 0.55 and int(item[2]) == 0:
-            f1.write(tmp)
+        if item[1] >= 0.46 and int(item[0]) == 0:
+            # f1.write(tmp)
             countf += 1
-        # print(cos)
-        # if(cos > 0.5):
-        # print(item)
-    f1.close()
+
+    # f1.close()
     # print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
     print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
     cosine = np.array(cosine)

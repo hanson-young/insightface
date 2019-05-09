@@ -154,7 +154,7 @@ default = edict()
 
 # default network
 default.network = 'y1'
-default.pretrained = '/media/yj/hanson/face-recognition/heils-models/y1-softmax-emore'
+default.pretrained = '/media/yj/hanson/face-recognition/heils-models/y1-softmax-emore/model'
 # /media/yj/hanson/face-recognition/models/model-y1-test2/model
 default.pretrained_epoch = 9
 # default dataset
