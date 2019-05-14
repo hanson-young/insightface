@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score, roc_curve, auc
 from sklearn.model_selection import KFold
 from scipy import interp
 import matplotlib.pyplot as plt
+from tqdm import tqdm
+import numba as nb
 
 def calculate_accuracy(threshold, dist, actual_issame):
     predict_issame = np.greater(dist, threshold)
@@ -21,6 +23,7 @@ def calculate_accuracy(threshold, dist, actual_issame):
     acc = float(tp + tn) / dist.size
     return tpr, fpr, acc
 
+@nb.njit
 def find_best_acc(labels, scores):
     best_thresh = None
     best_acc = 0
@@ -28,8 +31,8 @@ def find_best_acc(labels, scores):
     for thresh in thresholds:
         preds = np.greater_equal(scores, thresh).astype(np.int32)
         acc = accuracy_score(labels, preds, normalize=True)
-        if thresh == 0.46:
-            print(thresh, acc)
+        # if thresh == 0.46:
+        #     print(thresh, acc)
         if acc > best_acc:
             best_thresh = thresh
             best_acc = acc
@@ -47,20 +50,60 @@ def cal_acc(fold_num=10):
         _, best_thresh = find_best_acc(labels[train_set], scores[train_set])
 
         test_preds = np.greater_equal(scores[test_set], best_thresh).astype(np.int32)
-        print(best_thresh)
+        # print(best_thresh)
         acc_list.append(accuracy_score(labels[test_set], test_preds, normalize=True))
     return acc_list
 
 
+@nb.njit
+def clc_sim(embedding1, embedding2):
+    num = np.dot(embedding1, embedding2)
+    denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
+    cos = num / denom
+    return cos
+
+
+def clc_cosine(bin, pairs_list):
+    cosine = []
+    for item in tqdm(pairs_list):
+        # if(idx > 100):
+        #     break
+        tmp = item
+        item = item.strip('\n').split('\t')
+        index1 = bin[1].index(item[0])
+        index2 = bin[1].index(item[1])
+
+        embedding1 = np.array(bin[0][index1])
+        embedding2 = np.array(bin[0][index2])
+        # num = np.dot(embedding1, embedding2)
+        # denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
+        # cos = num / denom
+        cos = clc_sim(embedding1, embedding2)
+        cosine.append([int(item[2]), cos, tmp])
+    return cosine
 
 if __name__ == '__main__':
-
+    Threshold = 0.54
     parser = argparse.ArgumentParser(description='do verification')
     # general
     parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/bin', help='')
     parser.add_argument('--pairs-path', default='hsvd_pairs.txt', help='meglass pairs path')
     parser.add_argument('--embedding-bin', default='embedding_h1.bin', help='embedding bin file path.')
-
+    # h1 old @0.50
+    # ('tpr:%d,%f,%d', 450, 0.07874015748031496, 5715)
+    # ('fpr:%d,%f,%d', 4934, 0.00019332666446460778, 25521570)
+    # h1 old @0.54
+    # ('tpr:%d,%f,%d', 622, 0.10883639545056868, 5715)
+    # ('fpr:%d,%f,%d', 1750, 6.856944929328407e-05, 25521570)
+    # h2 new1 @0.45
+    # ('tpr:%d,%f,%d', 426, 0.07454068241469816, 5715)
+    # ('fpr:%d,%f,%d', 822, 3.220804989661686e-05, 25521570)
+    # h3 new2@0.46
+    # ('tpr:%d,%f,%d', 427, 0.0747156605424322, 5715)
+    # ('fpr:%d,%f,%d', 391, 1.5320374099242326e-05, 25521570)
+    # h3 new2@0.50
+    # ('tpr:%d,%f,%d', 607, 0.10621172353455818, 5715)
+    # ('fpr:%d,%f,%d', 74, 2.8995081415445835e-06, 25521570)
     args = parser.parse_args()
 
     embedding_path = os.path.join(args.data_dir, args.embedding_bin)
@@ -75,53 +118,53 @@ if __name__ == '__main__':
         bin = pickle.load(f)
         # print(bin)
 
-    f1 = open("../eval/view.txt",'wb')
-    cosine = []
+
+    cosine_pool = []
     countt = 0
     countf = 0
 
     totalt = 0
     totalf = 0
-    for idx, item in enumerate(pairs_lists):
-        # if(idx > 100):
-        #     break
-        tmp = item
-        item = item.strip('\n').split('\t')
-        index1 = bin[1].index(item[0])
-        index2 = bin[1].index(item[1])
+    # f1 = open("../eval/view.txt", 'wb')
+    import multiprocessing, math
 
-        embedding1 = np.array(bin[0][index1])
-        embedding2 = np.array(bin[0][index2])
-        num = np.dot(embedding1, embedding2)
-        denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
-        cos = num / denom
-        cosine.append([int(item[2]),cos])
-        if int(item[2]) == 1:
+    m_pools = 32
+    n_step = int(math.ceil(len(pairs_lists) / float(m_pools)))
+    pool = multiprocessing.Pool(processes=32)
+    for i in tqdm(xrange(0, len(pairs_lists), n_step)):
+        cosine_pool.append(pool.apply_async(clc_cosine, args=(bin, pairs_lists[i: i + n_step])))
+        # print (i, len(cosine_pool[0].get()))
+
+    cosine = []
+    for i in range(len(cosine_pool)):
+        cosine += cosine_pool[i].get()
+    pool.close()
+    pool.join()
+    f1 = open("../eval/view.txt", 'wb')
+    for item in tqdm(cosine):
+        if int(item[0]) == 1:
             totalt += 1
-        if int(item[2]) == 0:
+        if int(item[0]) == 0:
             totalf += 1
-        if cos < 0.48 and int(item[2]) == 1:#best threshold is 0.27 in flw
+        if item[1] < Threshold and int(item[0]) == 1:  # best threshold is 0.27 in flw
             countt += 1
 
-
-            # print(item, cos)
-
-        if cos >= 0.48 and int(item[2]) == 0:
-            f1.write(tmp)
+        if item[1] >= Threshold and int(item[0]) == 0:
+            f1.write(str(item[1]) + " " + item[2])
             countf += 1
-        # print(cos)
-        # if(cos > 0.5):
-        # print(item)
+
     f1.close()
-    print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
-    print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
+    if totalt != 0:
+        print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
+    if totalf != 0:
+        print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
     cosine = np.array(cosine)
 
-    acc_list = cal_acc()
-    print(acc_list)
-    acc, std = np.mean(acc_list), np.std(acc_list)
+    # acc_list = cal_acc()
+    # # print(acc_list)
+    # acc, std = np.mean(acc_list), np.std(acc_list)
 
-    print('[%s]Accuracy: %1.5f+-%1.5f' % ("hsvd", acc, std))
+    # print('[%s]Accuracy: %1.5f+-%1.5f' % ("hsvd", acc, std))
 
 
     # drawing roc curve

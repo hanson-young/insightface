@@ -88,12 +88,19 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='do verification')
     # general
     parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/bin', help='')
-    parser.add_argument('--model', default='/media/yj/hanson/face-recognition/heils-models/y1-arcface-emore/model,160',
+    parser.add_argument('--model', default='/media/yj/hanson/face-recognition/heils-models/y1-arcface-emore/model,126',
                         help='path to load model.')
+    # parser.add_argument('--model', default='/home/handsome/Documents/data/heils-face/model,160',
+    #                     help='path to load model.')
+    # ('tpr:%d,%f,%d', 427, 0.0747156605424322, 5715)
+    # ('fpr:%d,%f,%d', 18, 1.0421714684717076e-05, 1727163)
+
+    # ('tpr:%d,%f,%d', 400, 0.0699912510936133, 5715)
+    # ('fpr:%d,%f,%d', 19, 1.1000698833868025e-05, 1727163)
     parser.add_argument('--target', default='hsvd', help='test targets.')
-    parser.add_argument('--embedding-bin', default='embedding_h1.bin', help='test targets.')
-    parser.add_argument('--gpu', default='0', type=int, help='gpu id')
-    parser.add_argument('--batch-size', default=64, type=int, help='')
+    parser.add_argument('--embedding-bin', default='embedding_h3.bin', help='test targets.')
+    parser.add_argument('--gpu', default='3', type=int, help='gpu id')
+    parser.add_argument('--batch-size', default=10, type=int, help='')
     parser.add_argument('--nfolds', default=10, type=int, help='')
     args = parser.parse_args()
 

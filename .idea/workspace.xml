@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HSVD/hsvd_bin.py" beforeDir="false" afterPath="$PROJECT_DIR$/HSVD/hsvd_bin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HSVD/make_pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/HSVD/make_pairs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recognition/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognition/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eval/child_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/child_embedding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/eval/verification_child.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/verification_child.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eval/verification_hsvd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/verification_hsvd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/eval/view.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/view.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +57,8 @@
         <counts>
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,9 +69,9 @@
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="md" value="4" />
-          <entry key="py" value="117" />
+          <entry key="py" value="124" />
           <entry key="sh" value="8" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -73,8 +80,8 @@
           <entry key="C++" value="2" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="117" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -82,7 +89,7 @@
           <entry key="Python Console" value="38" />
           <entry key="dummy" value="19" />
           <entry key="md" value="1" />
-          <entry key="py" value="1615" />
+          <entry key="py" value="2052" />
           <entry key="sh" value="152" />
         </counts>
       </usages-collector>
@@ -91,7 +98,7 @@
           <entry key="Bash" value="143" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="1653" />
+          <entry key="Python" value="2090" />
         </counts>
       </usages-collector>
     </session>
@@ -101,50 +108,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval/child_embedding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="96" column="66" lean-forward="true" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
+            <state relative-caret-position="305">
+              <caret line="99" column="66" lean-forward="true" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recognition/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="156" column="91" selection-start-line="156" selection-start-column="91" selection-end-line="156" selection-end-column="91" />
+            <state relative-caret-position="436">
+              <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
+        <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-930">
-              <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
+            <state relative-caret-position="408">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Child/make_pairs.py">
+        <entry file="file://$PROJECT_DIR$/src/eval/hsvd_embedding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recognition/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2033">
-              <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-132">
+              <caret line="89" column="89" lean-forward="true" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -152,11 +147,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval/verification_child.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+            <state relative-caret-position="80">
+              <caret line="155" column="40" lean-forward="true" selection-start-line="155" selection-end-line="156" />
               <folding>
                 <element signature="e#16#29#0" expanded="true" />
-                <marker date="1557389304316" expanded="true" signature="2119:2691" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2082">
+              <caret line="172" selection-start-line="172" selection-end-line="172" />
+              <folding>
+                <element signature="e#16#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,7 +171,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval/view.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114" />
+            <state relative-caret-position="4176">
+              <caret line="346" column="11" lean-forward="true" selection-start-line="346" selection-start-column="11" selection-end-line="346" selection-end-column="11" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -245,27 +253,30 @@
         <option value="$PROJECT_DIR$/recognition/train_parall.py" />
         <option value="$PROJECT_DIR$/src/data/face2rec2.py" />
         <option value="$PROJECT_DIR$/src/eval/verification.py" />
-        <option value="$PROJECT_DIR$/src/eval/hsvd_embedding.py" />
-        <option value="$PROJECT_DIR$/src/eval/verification_hsvd.py" />
         <option value="$PROJECT_DIR$/deploy/model_slim.py" />
         <option value="$PROJECT_DIR$/Child/hsvd_bin.py" />
         <option value="$PROJECT_DIR$/src/data/dataset_merge.py" />
-        <option value="$PROJECT_DIR$/recognition/train.py" />
         <option value="$PROJECT_DIR$/Child/make_child.py" />
         <option value="$PROJECT_DIR$/src/align/align_childern.py" />
         <option value="$PROJECT_DIR$/Child/child_bin.py" />
         <option value="$PROJECT_DIR$/Child/make_pairs.py" />
+        <option value="$PROJECT_DIR$/recognition/train.py" />
+        <option value="$PROJECT_DIR$/src/eval/view.txt" />
+        <option value="$PROJECT_DIR$/recognition/config.py" />
         <option value="$PROJECT_DIR$/src/eval/child_embedding.py" />
         <option value="$PROJECT_DIR$/src/eval/verification_child.py" />
-        <option value="$PROJECT_DIR$/recognition/config.py" />
+        <option value="$PROJECT_DIR$/HSVD/hsvd_bin.py" />
+        <option value="$PROJECT_DIR$/HSVD/make_pairs.py" />
+        <option value="$PROJECT_DIR$/src/eval/hsvd_embedding.py" />
+        <option value="$PROJECT_DIR$/src/eval/verification_hsvd.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
-    <option name="y" value="63" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="111" />
+    <option name="y" value="131" />
     <option name="width" value="1373" />
-    <option name="height" value="759" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,6 +300,11 @@
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
               <item name="insightface" type="462c0819:PsiDirectoryNode" />
               <item name="datasets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insightface" type="462c0819:PsiDirectoryNode" />
+              <item name="HSVD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="insightface" type="b2602c69:ProjectViewProjectNode" />
@@ -342,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.verification_child">
+  <component name="RunManager" selected="Python.verification_hsvd">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,7 +381,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="align_childern" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hsvd_bin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -374,11 +390,11 @@
         <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/align" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HSVD" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/align/align_childern.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HSVD/hsvd_bin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -387,29 +403,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="child_bin" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="insightface" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Child" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Child/child_bin.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="child_embedding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hsvd_embedding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="insightface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -422,7 +416,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/eval/child_embedding.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/eval/hsvd_embedding.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -440,11 +434,11 @@
         <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Child" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HSVD" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Child/make_pairs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HSVD/make_pairs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -467,6 +461,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/eval/verification_child.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="verification_hsvd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="insightface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="LD_LIBRARY_PATH" value="/usr/local/cuda-9.0/lib64" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/py27/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/eval" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/eval/verification_hsvd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -509,19 +525,19 @@
       <item itemvalue="Python tests.pytest in test_tvm_model.py" />
       <item itemvalue="Python.lfw2pack" />
       <item itemvalue="Python tests.test_mxiter.py" />
-      <item itemvalue="Python.align_childern" />
-      <item itemvalue="Python.child_bin" />
-      <item itemvalue="Python.child_embedding" />
-      <item itemvalue="Python.make_pairs" />
       <item itemvalue="Python.verification_child" />
+      <item itemvalue="Python.hsvd_embedding" />
+      <item itemvalue="Python.verification_hsvd" />
+      <item itemvalue="Python.hsvd_bin" />
+      <item itemvalue="Python.make_pairs" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.verification_child" />
-        <item itemvalue="Python.child_embedding" />
+        <item itemvalue="Python.verification_hsvd" />
+        <item itemvalue="Python.hsvd_embedding" />
         <item itemvalue="Python.make_pairs" />
-        <item itemvalue="Python.child_bin" />
-        <item itemvalue="Python.align_childern" />
+        <item itemvalue="Python.hsvd_bin" />
+        <item itemvalue="Python.verification_child" />
       </list>
     </recent_temporary>
   </component>
@@ -568,20 +584,20 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="63" width="1373" height="759" extended-state="0" />
+    <frame x="-1" y="64" width="1538" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21802518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.384127" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34256056" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42698413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32871974" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.13127854" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -622,16 +638,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/mxnet/image/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="287" column="42" lean-forward="true" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/megaface/megaface_noises.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/megaface/facescrub_noises.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57" />
@@ -641,9 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="221" column="33" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="213" column="43" selection-start-line="213" selection-start-column="43" selection-end-line="213" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,28 +676,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="222" column="49" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/align/align_meglass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2777">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2777" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/align/align_lfw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="155" column="28" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,9 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#148#182#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="229" column="41" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="41" />
-          <folding>
-            <element signature="e#1#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="172" column="22" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,37 +766,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="160" column="23" lean-forward="true" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/dataset_c2c.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2366">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eval/verification_meglass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/dataset_clean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-228" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -828,9 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,13 +800,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recognition/image_iter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -871,66 +823,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/align/align_hsvd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HSVD/make_pairs.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/hsvd_embedding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="81" column="58" lean-forward="true" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HSVD/clearn_recg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/view.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/recognition/train_parall.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5074">
           <caret line="299" column="15" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="15" />
-          <folding>
-            <element signature="e#31#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -948,16 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Child/make_pairs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -972,19 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="114" column="16" lean-forward="true" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-930">
-          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,38 +878,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/child_embedding.py">
+    <entry file="file://$PROJECT_DIR$/src/data/dataset_merge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="96" column="66" lean-forward="true" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recognition/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2033">
-          <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="3120">
+          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval/verification_child.py">
+    <entry file="file://$PROJECT_DIR$/Child/make_pairs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+        <state relative-caret-position="648">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognition/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
-            <element signature="e#16#29#0" expanded="true" />
-            <marker date="1557389304316" expanded="true" signature="2119:2691" ph="..." />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/child_embedding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="99" column="66" lean-forward="true" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HSVD/make_pairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HSVD/hsvd_bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/view.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4176">
+          <caret line="346" column="11" lean-forward="true" selection-start-line="346" selection-start-column="11" selection-end-line="346" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/numpy/core/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1179">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recognition/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="156" column="91" selection-start-line="156" selection-start-column="91" selection-end-line="156" selection-end-column="91" />
+        <state relative-caret-position="436">
+          <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/main_env/lib/python2.7/site-packages/sklearn/metrics/ranking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="423" column="4" selection-start-line="423" selection-start-column="4" selection-end-line="423" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/hsvd_embedding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="89" column="89" lean-forward="true" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/verification_child.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="155" column="40" lean-forward="true" selection-start-line="155" selection-end-line="156" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2082">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

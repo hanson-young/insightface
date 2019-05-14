@@ -1,11 +1,11 @@
 import pickle
 import os
 
-input_dir = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/'
-base_inputdir = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/base'
-recg_inputdir = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/recg'
+input_dir = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112'
+base_inputdir = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/base'
+recg_inputdir = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/recg'
 
-hsvd_bin = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/bin/hsvd.bin'
+hsvd_bin = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/bin/hsvd.bin'
 
 
 base_list = []

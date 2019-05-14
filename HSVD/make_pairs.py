@@ -2,10 +2,10 @@
 import sys
 import os
 
-base_inputdir = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/base'
-recg_inputdir = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/recg'
+base_inputdir = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/base'
+recg_inputdir = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/recg'
 
-pairs_file = '/media/handsome/data2/DataSet/FaceVerification/HSVD/clearn-face0816-112x112/bin/hsvd_pairs.txt'
+pairs_file = '/media/yj/hanson/face-recognition/HSVD/clearn-face0816-112x112/bin/hsvd_pairs.txt'
 
 
 base_list = []

@@ -9,7 +9,7 @@ from sklearn.model_selection import KFold
 from scipy import interp
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from numba import jit
+import numba as nb
 
 def calculate_accuracy(threshold, dist, actual_issame):
     predict_issame = np.greater(dist, threshold)
@@ -49,17 +49,17 @@ def cal_acc(fold_num=10):
         _, best_thresh = find_best_acc(labels[train_set], scores[train_set])
 
         test_preds = np.greater_equal(scores[test_set], best_thresh).astype(np.int32)
-        print(best_thresh)
+        # print(best_thresh)
         acc_list.append(accuracy_score(labels[test_set], test_preds, normalize=True))
     return acc_list
 
-@jit
+
+@nb.njit
 def clc_sim(embedding1, embedding2):
     num = np.dot(embedding1, embedding2)
     denom = np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
     cos = num / denom
     return cos
-
 
 
 def clc_cosine(bin, pairs_list):
@@ -81,12 +81,11 @@ def clc_cosine(bin, pairs_list):
         cosine.append([int(item[2]), cos])
     return cosine
 
-
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='do verification')
     # general
-    parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/china_chip/bin', help='')
+    parser.add_argument('--data-dir', default='/media/yj/hanson/face-recognition/chip_china/bin', help='')
     parser.add_argument('--pairs-path', default='chip_pairs.txt', help='meglass pairs path')
     parser.add_argument('--embedding-bin', default='embedding_h2.bin', help='embedding bin file path.')
 
@@ -104,6 +103,7 @@ if __name__ == '__main__':
         bin = pickle.load(f)
         # print(bin)
 
+    f1 = open("../eval/view.txt",'wb')
     cosine_pool = []
     countt = 0
     countf = 0
@@ -111,12 +111,13 @@ if __name__ == '__main__':
     totalt = 0
     totalf = 0
     # f1 = open("../eval/view.txt", 'wb')
-    import multiprocessing,math
+    import multiprocessing, math
+
     m_pools = 32
     n_step = int(math.ceil(len(pairs_lists) / float(m_pools)))
     pool = multiprocessing.Pool(processes=32)
     for i in tqdm(xrange(0, len(pairs_lists), n_step)):
-        cosine_pool.append(pool.apply_async(clc_cosine, args = (bin, pairs_lists[i : i + n_step])))
+        cosine_pool.append(pool.apply_async(clc_cosine, args=(bin, pairs_lists[i: i + n_step])))
         # print (i, len(cosine_pool[0].get()))
 
     cosine = []
@@ -129,20 +130,22 @@ if __name__ == '__main__':
             totalt += 1
         if int(item[0]) == 0:
             totalf += 1
-        if item[1] < 0.46 and int(item[0]) == 1:#best threshold is 0.27 in flw
+        if item[1] < 0.50 and int(item[0]) == 1:  # best threshold is 0.27 in flw
             countt += 1
 
-        if item[1] >= 0.46 and int(item[0]) == 0:
+        if item[1] >= 0.50 and int(item[0]) == 0:
             # f1.write(tmp)
             countf += 1
 
-    # f1.close()
-    # print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
-    print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
+    f1.close()
+    if totalt != 0:
+        print("tpr:%d,%f,%d",countt,float(countt) / totalt,totalt) #本人没识别出来
+    if totalf != 0:
+        print("fpr:%d,%f,%d", countf,float(countf) / totalf,totalf) #识别出错的概率
     cosine = np.array(cosine)
 
     acc_list = cal_acc()
-    print(acc_list)
+    # print(acc_list)
     acc, std = np.mean(acc_list), np.std(acc_list)
 
     print('[%s]Accuracy: %1.5f+-%1.5f' % ("hsvd", acc, std))
