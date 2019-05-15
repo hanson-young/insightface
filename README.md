@@ -1,238 +1,206 @@
 
-# InsightFace: 2D and 3D Face Analysis Project
+底库130人,每人两张照片,模拟刷脸过程,每人现场照20余张,相互比对次数74万多次
 
-By Jia Guo and [Jiankang Deng](https://jiankangdeng.github.io/)
-
-## License
-
-The code of InsightFace is released under the MIT License.
-
-## ArcFace Video Demo
-
-[![ArcFace Demo](https://github.com/deepinsight/insightface/blob/master/resources/facerecognitionfromvideo.PNG)](https://www.youtube.com/watch?v=y-D1tReryGA&t=81s)
-
-Please click the image to watch the Youtube video. For Bilibili users, click [here](https://www.bilibili.com/video/av38041494?from=search&seid=11501833604850032313).
-
-## Recent Update
-
-**`2019.02.08`**: Please check [https://github.com/deepinsight/insightface/tree/master/recognition](https://github.com/deepinsight/insightface/tree/master/recognition) for our parallel training code which can easily and efficiently support one million identities on a single machine (8* 1080ti).
-
-**`2018.12.13`**: [TVM-Benchmark](https://github.com/deepinsight/insightface/wiki/TVM-Benchmark)
-
-**`2018.10.28`**: [Gender-Age](https://github.com/deepinsight/insightface/tree/master/gender-age) created with a lightweight model. About 1MB size, 10ms on single CPU core.  Gender accuracy 96% on validation set and 4.1 age MAE.
-
-**`2018.10.16`**: We got rank 1st on [IQIYI_VID](http://challenge.ai.iqiyi.com/detail?raceId=5afc36639689443e8f815f9e)(IQIYI video person identification) competition which in conjunction with PRCV2018, see [detail](https://github.com/deepinsight/insightface/issues/439).
-
-**`2018.06.14`**: There's a large scale Asian training dataset provided by Glint, see this [discussion](https://github.com/deepinsight/insightface/issues/256) for detail.
-
-**`2018.02.13`**: We achieved state-of-the-art performance on [MegaFace-Challenge](http://megaface.cs.washington.edu/results/facescrub.html). Please check our paper and code for implementation details.
-
-## Contents
-[Deep Face Recognition](#deep-face-recognition)
-- [Introduction](#introduction)
-- [Training Data](#training-data)
-- [Train](#train)
-- [Pretrained Models](#pretrained-models)
-- [Verification Results On Combined Margin](#verification-results-on-combined-margin)
-- [Test on MegaFace](#test-on-megaface)
-- [512-D Feature Embedding](#512-d-feature-embedding)
-- [Third-party Re-implementation](#third-party-re-implementation)
-
-[Face Alignment](#face-alignment)
-
-[Face Detection](#face-detection)
-
-[Citation](#citation)
-
-[Contact](#contact)
-
-## Deep Face Recognition
-
-### Introduction
-
-In this repository, we provide training data, network settings and loss designs for deep face recognition.
-The training data includes the normalised MS1M, VGG2 and CASIA-Webface datasets, which were already packed in MXNet binary format.
-The network backbones include ResNet, MobilefaceNet, MobileNet, InceptionResNet_v2, DenseNet, DPN.
-The loss functions include Softmax, SphereFace, CosineFace, ArcFace and Triplet (Euclidean/Angular) Loss.
+## OLD
+threshold | 0.46 | 0.48 | 0.5 | 0.52 | 0.54 |
+:---:|:---:|:---:|:---:|:---:|:---:
+拒绝识别数量 | 344 | 401 | 465 | 507 | 638
+错误识别数量 | 70| 32| 7| 3| 0
+FRR | 0.0601 | 0.0700 | 0.0812 | 0.0999 | 0.1114
+FAR | 9.3998-05 | 4.2971-05 | 9.3998-06 | 4.0285-06 | 0.0
+TPR(%) | 93.99 | 92.99 | 91.88 | 90.01 | 88.86
 
 
-![margin penalty for target logit](https://github.com/deepinsight/insightface/raw/master/resources/arcface.png)
-
-Our method, ArcFace, was initially described in an [arXiv technical report](https://arxiv.org/abs/1801.07698). By using this repository, you can simply achieve LFW 99.80%+ and Megaface 98%+ by a single model. This repository can help researcher/engineer to develop deep face recognition algorithms quickly by only two steps: download the binary dataset and run the training script.
-
-### Training Data
-
-All face images are aligned by [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html) and cropped to 112x112:
-
-Please check [Dataset-Zoo](https://github.com/deepinsight/insightface/wiki/Dataset-Zoo) for detail information and dataset downloading.
-
-
-* Please check *src/data/face2rec2.py* on how to build a binary face dataset. Any public available *MTCNN* can be used to align the faces, and the performance should not change. We will improve the face normalisation step by full pose alignment methods recently.
-
-### Train
-
-1. Install `MXNet` with GPU support (Python 2.7).
+## NEW
+threshold | 0.40 | 0.42 | 0.44 | 0.56 | 0.48 |
+:---:|:---:|:---:|:---:|:---:|:---:
+拒绝识别数量 | 322 | 346 | 413 | 485 | 559
+错误识别数量 | 26| 10| 5| 2| 0
+FRR | 0.0562 | 0.0604 | 0.0721 | 0.0847 | 0.0976
+FAR | 3.4914-05 | 1.3428-05 | 8.0570-06 | 4.0285-06 | 0.0
+TPR(%) | 94.38 | 93.96 | 92.79 | 91.53 | 90.24
 
 ```
-pip install mxnet-cu90
-```
-
-2. Clone the InsightFace repository. We call the directory insightface as *`INSIGHTFACE_ROOT`*.
-
-```
-git clone --recursive https://github.com/deepinsight/insightface.git
-```
-
-3. Download the training set (`MS1M-Arcface`) and place it in *`$INSIGHTFACE_ROOT/datasets/`*. Each training dataset includes at least following 6 files:
-
-```Shell
-    faces_emore/
-       train.idx
-       train.rec
-       property
-       lfw.bin
-       cfp_fp.bin
-       agedb_30.bin
-```
-
-The first three files are the training dataset while the last three files are verification sets.
-
-4. Train deep face recognition models.
-In this part, we assume you are in the directory *`$INSIGHTFACE_ROOT/recognition/`*.
-```Shell
-export MXNET_CPU_WORKER_NTHREADS=24
-export MXNET_ENGINE_TYPE=ThreadedEnginePerDevice
-```
-
-Place and edit config file:
-```Shell
-cp sample_config.py config.py
-vim config.py # edit dataset path etc..
-```
-
-We give some examples below. Our experiments were conducted on the Tesla P40 GPU.
-
-(1). Train ArcFace with LResNet100E-IR.
-
-```Shell
-CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train.py --network r100 --loss arcface --dataset emore
-```
-It will output verification results of *LFW*, *CFP-FP* and *AgeDB-30* every 2000 batches. You can check all options in *config.py*.
-This model can achieve *LFW 99.80+* and *MegaFace 98.3%+*.
-
-(2). Train CosineFace with LResNet50E-IR.
-
-```Shell
-CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train.py --network r50 --loss cosface --dataset emore
-```
-
-(3). Train Softmax with LMobileNet-GAP.
-
-```Shell
-CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train.py --network m1 --loss softmax --dataset emore
-```
-
-(4). Fine-turn the above Softmax model with Triplet loss.
-
-```Shell
-CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train.py --network m1 --loss triplet --lr 0.005 --pretrained ./models/m1-softmax-emore,1
-```
-
-
-5. Verification results.
-
-*LResNet100E-IR* network trained on *MS1M-Arcface* dataset with ArcFace loss:
-
-| Method  | LFW(%) | CFP-FP(%) | AgeDB-30(%) |  
-| ------- | ------ | --------- | ----------- |  
-|  Ours   | 99.80+ | 98.0+     | 98.20+      |   
+old:
+tpr@0.400000:0.959230,5482,233
+fpr@0.400000:0.002190,55899,25465671
+tpr@0.410000:0.957130,5470,245
+fpr@0.410000:0.001721,43917,25477653
+tpr@0.420000:0.953981,5452,263
+fpr@0.420000:0.001353,34525,25487045
+tpr@0.430000:0.951181,5436,279
+fpr@0.430000:0.001056,26954,25494616
+tpr@0.440000:0.947682,5416,299
+fpr@0.440000:0.000822,20974,25500596
+tpr@0.450000:0.944532,5398,317
+fpr@0.450000:0.000642,16387,25505183
+tpr@0.460000:0.941557,5381,334
+fpr@0.460000:0.000504,12869,25508701
+tpr@0.470000:0.936833,5354,361
+fpr@0.470000:0.000399,10174,25511396
+tpr@0.480000:0.931584,5324,391
+fpr@0.480000:0.000313,8000,25513570
+tpr@0.490000:0.926334,5294,421
+fpr@0.490000:0.000246,6281,25515289
+tpr@0.500000:0.921260,5265,450
+fpr@0.500000:0.000193,4934,25516636
+tpr@0.510000:0.915486,5232,483
+fpr@0.510000:0.000151,3845,25517725
+tpr@0.520000:0.907787,5188,527
+fpr@0.520000:0.000116,2973,25518597
+tpr@0.530000:0.901312,5151,564
+fpr@0.530000:0.000089,2278,25519292
+tpr@0.540000:0.891164,5093,622
+fpr@0.540000:0.000069,1750,25519820
+tpr@0.550000:0.881015,5035,680
+fpr@0.550000:0.000053,1352,25520218
+tpr@0.560000:0.864742,4942,773
+fpr@0.560000:0.000040,1009,25520561
+tpr@0.570000:0.850219,4859,856
+fpr@0.570000:0.000030,778,25520792
+tpr@0.580000:0.837620,4787,928
+fpr@0.580000:0.000023,583,25520987
+tpr@0.590000:0.822397,4700,1015
+fpr@0.590000:0.000017,434,25521136
+tpr@0.600000:0.802975,4589,1126
+fpr@0.600000:0.000013,333,25521237
 
 
 
-### Pretrained Models
+new1:
+tpr@0.420000:0.941732,5382,333
+fpr@0.420000:0.000092,2336,25519234
+tpr@0.430000:0.936658,5353,362
+fpr@0.430000:0.000065,1652,25519918
+tpr@0.440000:0.930009,5315,400
+fpr@0.440000:0.000046,1175,25520395
+tpr@0.450000:0.925459,5289,426
+fpr@0.450000:0.000032,822,25520748
+tpr@0.460000:0.917410,5243,472
+fpr@0.460000:0.000021,534,25521036
+tpr@0.470000:0.910936,5206,509
+fpr@0.470000:0.000015,388,25521182
+tpr@0.480000:0.904462,5169,546
+fpr@0.480000:0.000010,265,25521305
+tpr@0.490000:0.896238,5122,593
+fpr@0.490000:0.000007,181,25521389
+tpr@0.500000:0.887664,5073,642
+fpr@0.500000:0.000005,123,25521447
+tpr@0.510000:0.878215,5019,696
+fpr@0.510000:0.000003,79,25521491
+tpr@0.520000:0.866842,4954,761
+fpr@0.520000:0.000002,47,25521523
 
-You can use `$INSIGHTFACE/src/eval/verification.py` to test all the pre-trained models.
-
-**Please check [Model-Zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo) for more pretrained models.**
-
-
-
-### Verification Results on Combined Margin
-
-A combined margin method was proposed as a function of target logits value and original `θ`:
-
-```
-COM(θ) = cos(m_1*θ+m_2) - m_3
-```
-
-For training with `m1=1.0, m2=0.3, m3=0.2`, run following command:
-```
-CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train_softmax.py --network r100 --loss combined --dataset emore
-```
-
-Results by using ``MS1M-IBUG(MS1M-V1)``
-
-| Method           | m1   | m2   | m3   | LFW   | CFP-FP | AgeDB-30 |
-| ---------------- | ---- | ---- | ---- | ----- | ------ | -------- |
-| W&F Norm Softmax | 1    | 0    | 0    | 99.28 | 88.50  | 95.13    |
-| SphereFace       | 1.5  | 0    | 0    | 99.76 | 94.17  | 97.30    |
-| CosineFace       | 1    | 0    | 0.35 | 99.80 | 94.4   | 97.91    |
-| ArcFace          | 1    | 0.5  | 0    | 99.83 | 94.04  | 98.08    |
-| Combined Margin  | 1.2  | 0.4  | 0    | 99.80 | 94.08  | 98.05    |
-| Combined Margin  | 1.1  | 0    | 0.35 | 99.81 | 94.50  | 98.08    |
-| Combined Margin  | 1    | 0.3  | 0.2  | 99.83 | 94.51  | 98.13    |
-| Combined Margin  | 0.9  | 0.4  | 0.15 | 99.83 | 94.20  | 98.16    |
-
-### Test on MegaFace
-
-Please check *`$INSIGHTFACE_ROOT/Evaluation/megaface/`* to evaluate the model accuracy on Megaface. All aligned images were already provided.
-
-
-### 512-D Feature Embedding
-
-In this part, we assume you are in the directory *`$INSIGHTFACE_ROOT/deploy/`*. The input face image should be generally centre cropped. We use *RNet+ONet* of *MTCNN* to further align the image before sending it to the feature embedding network.
-
-1. Prepare a pre-trained model.
-2. Put the model under *`$INSIGHTFACE_ROOT/models/`*. For example, *`$INSIGHTFACE_ROOT/models/model-r100-ii`*.
-3. Run the test script *`$INSIGHTFACE_ROOT/deploy/test.py`*.
-
-For single cropped face image(112x112), total inference time is only 17ms on our testing server(Intel E5-2660 @ 2.00GHz, Tesla M40, *LResNet34E-IR*).
-
-### Third-party Re-implementation
-
-- TensorFlow: [InsightFace_TF](https://github.com/auroua/InsightFace_TF)
-- TensorFlow: [tf-insightface](https://github.com/AIInAi/tf-insightface)
-- PyTorch: [InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch)
-- PyTorch: [arcface-pytorch](https://github.com/ronghuaiyang/arcface-pytorch)
-- Caffe: [arcface-caffe](https://github.com/xialuxi/arcface-caffe)
-- Caffe: [CombinedMargin-caffe](https://github.com/gehaocool/CombinedMargin-caffe)
-- Tensorflow: [InsightFace-tensorflow](https://github.com/luckycallor/InsightFace-tensorflow)
+new2:
+tpr@0.420000:0.945057,5401,314
+fpr@0.420000:0.000073,1869,25519701
+tpr@0.430000:0.942082,5384,331
+fpr@0.430000:0.000050,1287,25520283
+tpr@0.440000:0.937008,5355,360
+fpr@0.440000:0.000034,871,25520699
+tpr@0.450000:0.931934,5326,389
+fpr@0.450000:0.000023,582,25520988
+tpr@0.460000:0.925809,5291,424
+fpr@0.460000:0.000015,386,25521184
+tpr@0.470000:0.917760,5245,470
+fpr@0.470000:0.000011,268,25521302
+tpr@0.480000:0.909711,5199,516
+fpr@0.480000:0.000007,179,25521391
+tpr@0.490000:0.902362,5157,558
+fpr@0.490000:0.000004,114,25521456
+tpr@0.500000:0.893613,5107,608
+fpr@0.500000:0.000003,68,25521502
+tpr@0.510000:0.884164,5053,662
+fpr@0.510000:0.000002,42,25521528
+tpr@0.520000:0.873316,4991,724
+fpr@0.520000:0.000001,24,25521546
 
 
-## Face Alignment
+insightface@resnet101
+tpr@0.400000:0.972003,5555,160
+fpr@0.400000:0.000277,7058,25514512
+tpr@0.410000:0.969904,5543,172
+fpr@0.410000:0.000208,5317,25516253
+tpr@0.420000:0.968854,5537,178
+fpr@0.420000:0.000156,3979,25517591
+tpr@0.430000:0.967629,5530,185
+fpr@0.430000:0.000117,2991,25518579
+tpr@0.440000:0.965529,5518,197
+fpr@0.440000:0.000087,2228,25519342
+tpr@0.450000:0.963780,5508,207
+fpr@0.450000:0.000064,1636,25519934
+tpr@0.460000:0.962555,5501,214
+fpr@0.460000:0.000047,1201,25520369
+tpr@0.470000:0.959930,5486,229
+fpr@0.470000:0.000035,891,25520679
+tpr@0.480000:0.957480,5472,243
+fpr@0.480000:0.000026,657,25520913
+tpr@0.490000:0.955556,5461,254
+fpr@0.490000:0.000018,471,25521099
+tpr@0.500000:0.952581,5444,271
+fpr@0.500000:0.000015,371,25521199
+tpr@0.510000:0.949256,5425,290
+fpr@0.510000:0.000011,272,25521298
+tpr@0.520000:0.945232,5402,313
+fpr@0.520000:0.000008,195,25521375
+tpr@0.530000:0.940682,5376,339
+fpr@0.530000:0.000005,127,25521443
+tpr@0.540000:0.935258,5345,370
+fpr@0.540000:0.000004,100,25521470
+tpr@0.550000:0.930009,5315,400
+fpr@0.550000:0.000003,72,25521498
+tpr@0.560000:0.923185,5276,439
+fpr@0.560000:0.000002,53,25521517
+tpr@0.570000:0.916885,5240,475
+fpr@0.570000:0.000001,35,25521535
+tpr@0.580000:0.908661,5193,522
+fpr@0.580000:0.000001,25,25521545
+tpr@0.590000:0.898163,5133,582
+fpr@0.590000:0.000001,18,25521552
+tpr@0.600000:0.887489,5072,643
+fpr@0.600000:0.000001,13,25521557
 
-Todo
-
-## Face Detection
-
-Todo
-
-## Citation
-
-If you find *InsightFace* useful in your research, please consider to cite the following related papers:
-
-```
-@inproceedings{deng2018arcface,
-title={ArcFace: Additive Angular Margin Loss for Deep Face Recognition},
-author={Deng, Jiankang and Guo, Jia and Niannan, Xue and Zafeiriou, Stefanos},
-booktitle={CVPR},
-year={2019}
-}
-```
-
-## Contact
-
-```
-[Jia Guo](guojia[at]gmail.com)
-[Jiankang Deng](jiankangdeng[at]gmail.com)
+insightface@mobilefacenet
+tpr@0.400000:0.953631,5450,265
+fpr@0.400000:0.003465,88437,25433133
+tpr@0.410000:0.950306,5431,284
+fpr@0.410000:0.002782,71000,25450570
+tpr@0.420000:0.946807,5411,304
+fpr@0.420000:0.002220,56651,25464919
+tpr@0.430000:0.942432,5386,329
+fpr@0.430000:0.001766,45074,25476496
+tpr@0.440000:0.940507,5375,340
+fpr@0.440000:0.001398,35686,25485884
+tpr@0.450000:0.937883,5360,355
+fpr@0.450000:0.001106,28220,25493350
+tpr@0.460000:0.934383,5340,375
+fpr@0.460000:0.000867,22138,25499432
+tpr@0.470000:0.929484,5312,403
+fpr@0.470000:0.000680,17343,25504227
+tpr@0.480000:0.925109,5287,428
+fpr@0.480000:0.000531,13551,25508019
+tpr@0.490000:0.921085,5264,451
+fpr@0.490000:0.000412,10520,25511050
+tpr@0.500000:0.915136,5230,485
+fpr@0.500000:0.000319,8149,25513421
+tpr@0.510000:0.909711,5199,516
+fpr@0.510000:0.000248,6332,25515238
+tpr@0.520000:0.903587,5164,551
+fpr@0.520000:0.000191,4879,25516691
+tpr@0.530000:0.896938,5126,589
+fpr@0.530000:0.000144,3683,25517887
+tpr@0.540000:0.888189,5076,639
+fpr@0.540000:0.000110,2801,25518769
+tpr@0.550000:0.877690,5016,699
+fpr@0.550000:0.000082,2095,25519475
+tpr@0.560000:0.865792,4948,767
+fpr@0.560000:0.000062,1574,25519996
+tpr@0.570000:0.854768,4885,830
+fpr@0.570000:0.000046,1164,25520406
+tpr@0.580000:0.841995,4812,903
+fpr@0.580000:0.000034,870,25520700
+tpr@0.590000:0.828696,4736,979
+fpr@0.590000:0.000026,662,25520908
+tpr@0.600000:0.810849,4634,1081
+fpr@0.600000:0.000019,484,25521086
 ```

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472ab3fd-9992-4966-9aeb-fe31d1f87d77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deploy/model_slim.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/model_slim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognition/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognition/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/hsvd_embedding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eval/verification_hsvd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/verification_hsvd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eval/view.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/eval/view.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mxnet-server/feature_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mxnet-server/feature_compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mxnet-server/images/B.npy" beforeDir="false" afterPath="$PROJECT_DIR$/src/mxnet-server/images/B.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +59,7 @@
           <entry key="h" value="1" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
-          <entry key="md" value="4" />
+          <entry key="md" value="5" />
           <entry key="py" value="126" />
           <entry key="sh" value="8" />
           <entry key="txt" value="7" />
@@ -76,7 +70,7 @@
           <entry key="Bash" value="7" />
           <entry key="C++" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Python" value="126" />
         </counts>
@@ -165,6 +159,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval/verification_child.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,11 +183,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+            <state relative-caret-position="600">
+              <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
               <folding>
                 <element signature="e#16#29#0" expanded="true" />
                 <marker date="1557890703286" expanded="true" signature="1722:1725" ph="..." />
@@ -292,6 +298,7 @@
         <option value="$PROJECT_DIR$/deploy/model_slim.py" />
         <option value="$PROJECT_DIR$/src/eval/verification_hsvd.py" />
         <option value="$PROJECT_DIR$/src/eval/hsvd_embedding.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -606,12 +613,12 @@
     <frame x="-1" y="64" width="1538" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21802518" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21802518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34256056" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34256056" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42560554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,13 +665,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recognition/data/rec2image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/align/align_dataset_mtcnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2109" />
@@ -1001,12 +1001,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eval/verification_hsvd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+        <state relative-caret-position="600">
+          <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
           <folding>
             <element signature="e#16#29#0" expanded="true" />
             <marker date="1557890703286" expanded="true" signature="1722:1725" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
