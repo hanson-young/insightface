@@ -156,7 +156,7 @@ default = edict()
 default.network = 'y1'
 default.pretrained = '/media/yj/hanson/face-recognition/heils-models/y1-arcface-emore/model'
 # /media/yj/hanson/face-recognition/models/model-y1-test2/model
-default.pretrained_epoch = 134
+default.pretrained_epoch = 145
 # default dataset
 default.dataset = 'emore'
 default.loss = 'arcface'
@@ -165,12 +165,14 @@ default.verbose = 2000
 default.kvstore = 'device'
 
 default.end_epoch = 10000
-default.lr = 0.1
+default.lr = 0.00001
 default.wd = 0.00004
 default.mom = 0.9
 default.per_batch_size = 150
 default.ckpt = 2
-default.lr_steps = '100000,160000,220000'
+default.lr_steps = '50000,100000,150000'
+
+# default.lr_steps = '100000,160000,220000'
 # default.lr_steps = '240000,360000,440000'
 default.models_root = '/media/yj/hanson/face-recognition/heils-models'
 

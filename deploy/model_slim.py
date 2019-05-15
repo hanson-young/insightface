@@ -10,7 +10,7 @@ import mxnet as mx
 
 parser = argparse.ArgumentParser(description='face model slim')
 # general
-parser.add_argument('--model', default='/home/handsome/Documents/data/heils-face/model,160', help='path to load model.')
+parser.add_argument('--model', default='/media/yj/hanson/face-recognition/heils-models/best/model,1', help='path to load model.')
 args = parser.parse_args()
 
 _vec = args.model.split(',')

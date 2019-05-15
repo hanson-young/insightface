@@ -31,7 +31,7 @@ class Embedding:
         ctx = mx.cpu()
         sym, arg_params, aux_params = mx.model.load_checkpoint(prefix, epoch)
         all_layers = sym.get_internals()
-        sym = all_layers['pre_fc1_output']
+        sym = all_layers['fc1_output']
         image_size = (112, 112)
         self.image_size = image_size
         model = mx.mod.Module(symbol=sym, context=ctx, label_names=None)
@@ -181,7 +181,7 @@ class Embedding:
 
 
 if __name__ == "__main__":
-    _embedding = Embedding('/home/handsome/Documents/heils_git/face-recog-mxnet-m/insightface/src/mxnet-server/model/model',0)
-    pth1 = '/home/handsome/Downloads/27268277.jpg'
-    pth2 = '/home/handsome/Downloads/1492846140.jpg'
+    _embedding = Embedding('/media/yj/hanson/face-recognition/heils-models/y1-arcface-emore/model',1)
+    pth1 = '/media/yj/hanson/face-recognition/china-cp/4500/0/0.jpg'
+    pth2 = '/media/yj/hanson/face-recognition/china-cp/4500/1/4.jpg'
     _embedding.example(pth1, pth2)
